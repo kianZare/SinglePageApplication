@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/client/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Single Page Application</title>
+</head>
+<body>
+    <div class="main-layout">
+        <nav class="nav">
+            <div class="nav-logo">KIAN</div>
+            <ul class="nav-items">
+                <li class="nav-item">
+                    <a href="/" class="nav-link" data-link>
+                    <span class="icon-container"><i class="far fa-user"></i></span>
+                    <span class="nav-item-lable">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="products" class="nav-link" data-link>
+                    <span class="icon-container"><i class="fab fa-product-hunt"></i></span>
+                    <span class="nav-item-lable">Products</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="posts" class="nav-link" data-link>
+                    <span class="icon-container"><i class="fab fa-blogger-b"></i></span>
+                    <span class="nav-item-lable">Posts</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="app-version">
+                <span class="version">KIAN v.1</span>
+                <span class="icon-container sidebar-toggler">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                </div>
+        </nav>
+        <main id="app"></main>
+    </div>
+    <script src="/client/app.js" type="module"></script>
+</body>
+</html>
